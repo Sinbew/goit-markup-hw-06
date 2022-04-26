@@ -313,7 +313,7 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
 }
 
 .label-input:focus {

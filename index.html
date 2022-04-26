@@ -60,9 +60,15 @@
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+            <form class="modal-form modal">
+              <button data-modal-close class="close-modal-btn">
+                <svg class="close-modal-icon" width="18" height="18">
+                  <use href="./images/svg/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </button>
               <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-              <form class="modal-form">
+
+              <div class="modal-group">
                 <label class="modal-label">
                   <span class="label-title">Имя</span>
                   <input class="label-input" type="text" name="user-name" />
@@ -100,15 +106,9 @@
                     <a class="policy-link" href="">Условия договора </a>
                   </span>
                 </label>
-                <button class="submit-modal-btn" type="submit">Отправить</button>
-              </form>
-
-              <button data-modal-close class="close-modal-btn">
-                <svg class="close-modal-icon" width="18" height="18">
-                  <use href="./images/svg/symbol-defs.svg#icon-close-modal"></use>
-                </svg>
-              </button>
-            </div>
+              </div>
+              <button class="submit-modal-btn" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -459,7 +459,7 @@
         </div>
 
         <form class="footer-form">
-          <label class="subscribe-text" for="subscribe">Подпишитесь на рассылку</label>
+          <p class="subscribe-text">Подпишитесь на рассылку</p>
           <div class="footer-input">
             <input
               class="subscribe-input"
