@@ -385,25 +385,34 @@ img {
   clip: rect(0 0 0 0);
 }
 .check {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   margin-right: 7px;
+  width: 16px;
+  height: 15px;
 
   border: 2px solid var(--main-black);
   border-radius: 2px;
-  width: 16px;
-  height: 15px;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+  transition: border-color 250ms ease, background-color 250ms ease;
 }
 
 .checkbox:checked ~ .check {
-  background-image: url(../images/svg/icons-modal/icon-check.svg);
-  background-size: contain;
   background-color: var(--main-blue);
-  border-color: var(--main-blue);
+  border-color: transparent;
+}
 
-  background-origin: border-box;
+.check-icon {
+  flex-shrink: 0;
+
+  fill: transparent;
+  transition: fill 250ms ease;
+}
+
+.checkbox:checked ~ .check .check-icon {
+  fill: var(--main-white);
 }
 
 .submit-modal-btn {
