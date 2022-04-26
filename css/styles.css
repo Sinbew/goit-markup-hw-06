@@ -789,14 +789,18 @@ img {
 
 .subscribe-input {
   padding: 15px 16px;
-
+  margin-right: 12px;
   width: 358px;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
+
   border-radius: 4px;
-  margin-right: 12px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:focus {
+  border: 1px solid var(--main-blue);
 }
 
 .footer-subscribe-button {
@@ -825,9 +829,6 @@ img {
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.subscribe-input:focus {
-  border: 1px solid var(--main-blue);
 }
 
 /*------------------------- Portfolio.html -------------------------  */
